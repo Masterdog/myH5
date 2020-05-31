@@ -2,73 +2,147 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <title>植物大战僵尸v1.2</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="./skin/jedate.css">
+    <link type="text/css" rel="stylesheet" href="./css/jeDate-test.css">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="./src/jedate.js"></script>
+    <script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
 </head>
+
 <body>
-<div id="new-js-startGame-btn" onclick="alert('aaaa')">点击开始游戏</div>
-<!-- 游戏主场景 -->
-<div class="content-box">
-    <canvas id="canvas" width="1400" height="600"></canvas>
+<div class="container">
+    <form action="" class="form-horizontal"  role="form">
+        <fieldset>
+            <legend>Test</legend>
+            <div class="form-group">
+                <label for="Subrack_ID" class="col-md-2 control-label">子架ID</label>
+                <div class="input-group date form_datetime col-md-5 pull-left" data-link-field="Subrack_ID">
+                    <input class="form-control" size="16" type="text" placeholder="0-7">
+                </div>
+                <input type="hidden" id="Subrack_ID" value=""/><br/>
+            </div>
+
+
+            <div class="form-group">
+                <label for="IP" class="col-md-2 control-label">IP地址显示</label>
+                <div class="input-group col-md-5 pull-left" data-link-field="IP">
+                    <input class="form-control" size="16" type="text" placeholder="IP">
+                </div>
+                <input type="hidden"  id="IP" value=""/><br/>
+            </div>
+            <div class="form-group">
+                <label for="Mask" class="col-md-2 control-label"></label>
+                <div class="input-group col-md-5 pull-left" data-link-field="Mask">
+                    <input class="form-control" size="16" type="text" placeholder="Mask">
+                </div>
+                <input type="hidden" id="Mask" value=""/>
+            </div>
+            <div class="form-group">
+                <label for="Gateway" class="col-md-2 control-label"></label>
+                <div class="input-group col-md-5 pull-left" data-link-field="Gateway">
+                    <input class="form-control" size="16" type="text" placeholder="Gateway">
+                </div>
+                <input type="hidden" id="Gateway" value=""/>
+            </div>
+
+            <div class="form-group">
+                <label for="OutTime" class="col-md-2 control-label">连接超时时间</label>
+                <div class="input-group col-md-5 pull-left" data-link-field="OutTime">
+                    <input class="form-control" size="16" type="text" placeholder="256">
+                    <span class="input-group-addon">秒</span>
+                </div>
+                <input type="hidden" id="OutTime" value=""/>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label">软件自动匹配</label>
+                <div class="input-group col-md-1 radio">
+                    <span class="input-group-addon">
+                        <input type="radio">On
+                    </span>
+                </div>
+                <div class="input-group col-md-1 radio">
+                    <span class="input-group-addon">
+                        <input type="radio">Off
+                    </span>
+                </div>
+            </div>
+
+<!--            <div class="form-group jewarp jeitem">-->
+<!--                <label class="col-md-2 control-label">日期时间设置</label>-->
+<!--                <div class="input-group date form_date col-md-4" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">-->
+<!--                    <input class="form-control" size="16" type="text" value="" readonly>-->
+<!--                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>-->
+<!--                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>-->
+<!--                </div>-->
+<!--                <input type="hidden" id="dtp_input2" value="" /><br/>-->
+<!--                <div class="input-group date form_time col-md-4" data-date="" data-date-format="hh:ii:ss" data-link-field="dtp_input3" data-link-format="hh:ii">-->
+<!--                    <input class="form-control" size="16" type="text" value="" readonly>-->
+<!--                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>-->
+<!--                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>-->
+<!--                    <div class="jeinpbox input-group date form_date col-md-4"><input type="text" class="jeinput" id="test11A" placeholder="YYYY-MM-DD hh:mm:ss"></div>-->
+<!--                </div>-->
+<!--                <input type="hidden" id="dtp_input3" value="" /><br/>-->
+<!--            </div>-->
+
+            <div class="form-group">
+                <label class="col-md-2 control-label">日期时间设置</label>
+                <div class="jeinpbox">
+                    <input type="text" class="form-control" id="DateTime" placeholder="YYYY-MM-DD hh:mm:ss">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label">缺省数据格式</label>
+                <label class="radio-inline pull-left">
+                    <input class="" type="radio" name="inlineRadioOptions" id="sci" value="option1"> 科学计数法
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="float" value="option1"> 浮点数
+                </label>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-md-2 control-label"></label>
+                <button class="btn btn-default" type="submit">清除日志文件</button>
+                <button class="btn btn-default" type="submit">恢复出厂设置</button>
+            </div>
+
+
+        </fieldset>
+    </form>
 </div>
-<!-- 卡片列表 -->
-<ul class="cards-list">
-    <li class="cards-item" data-section="sunflower">
-        <div class="card-intro">
-            <span>向日葵</span>
-            <span>冷却时间：5秒</span>
-        </div>
-    </li>
-    <li class="cards-item" data-section="wallnut">
-        <div class="card-intro">
-            <span>坚果墙</span>
-            <span>冷却时间：12秒</span>
-        </div>
-    </li>
-    <li class="cards-item" data-section="peashooter">
-        <div class="card-intro">
-            <span>豌豆射手</span>
-            <span>冷却时间：7秒</span>
-        </div>
-    </li>
-    <li class="cards-item" data-section="repeater">
-        <div class="card-intro">
-            <span>双发豌豆射手</span>
-            <span>冷却时间：10秒</span>
-        </div>
-    </li>
-    <li class="cards-item" data-section="gatlingpea">
-        <div class="card-intro">
-            <span>加特林射手</span>
-            <span>冷却时间：15秒</span>
-        </div>
-    </li>
-    <li class="cards-item" data-section="chomper">
-        <div class="card-intro">
-            <span>食人花</span>
-            <span>冷却时间：15秒</span>
-        </div>
-    </li>
-    <li class="cards-item" data-section="cherrybomb">
-        <div class="card-intro">
-            <span>樱桃炸弹</span>
-            <span>冷却时间：25秒</span>
-        </div>
-    </li>
-</ul>
-<!-- 游戏控制按键 -->
-<div class="menu-box">
-    <div id="pauseGame" class="contro-btn">暂停</div>
-    <div id="restartGame" class="contro-btn">开始游戏</div>
-</div>
-<!-- 系统自动生成阳光 -->
-<img class="sun-img systemSun" src="images/sun.gif" alt="">
-<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/scene.js"></script>
-<script src="js/game.js"></script>
-<script src="js/main.js"></script>
+<script type="text/javascript" src="./js/demo.js"></script>
+
+<!--<script type="text/javascript">-->
+<!--    $('.form_date').datetimepicker({-->
+<!--        language:  'ch',-->
+<!--        weekStart: 1,-->
+<!--        todayBtn:  1,-->
+<!--        autoclose: 1,-->
+<!--        todayHighlight: 1,-->
+<!--        startView: 2,-->
+<!--        minView: 2,-->
+<!--        forceParse: 0-->
+<!--    });-->
+<!--    $('.form_time').datetimepicker({-->
+<!--        language:  'ch',-->
+<!--        weekStart: 1,-->
+<!--        todayBtn:  1,-->
+<!--        autoclose: 1,-->
+<!--        todayHighlight: 1,-->
+<!--        startView: 1,-->
+<!--        minView: 0,-->
+<!--        maxView: 1,-->
+<!--        forceParse: 0-->
+<!--    });-->
+<!--</script>-->
 </body>
 </html>

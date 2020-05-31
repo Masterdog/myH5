@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecbdf0b2-b385-4388-8af8-d1942ed48012" name="Default Changelist" comment="" />
+    <list default="true" id="ecbdf0b2-b385-4388-8af8-d1942ed48012" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/jquery/jquery-1.8.3.min.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,13 +85,30 @@
       <workItem from="1590842834181" duration="6147000" />
       <workItem from="1590898451862" duration="1317000" />
       <workItem from="1590899788382" duration="1028000" />
+      <workItem from="1590911152345" duration="401000" />
     </task>
+    <task id="LOCAL-00001" summary="modify">
+      <created>1590911263568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590911263568</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="404" y="26" key="CommitChangelistDialog2" timestamp="1590911260258">
+      <screen x="64" y="0" width="1472" height="864" />
+    </state>
+    <state x="404" y="26" key="CommitChangelistDialog2/64.0.1472.864@64.0.1472.864" timestamp="1590911260258" />
     <state x="581" y="188" key="FileChooserDialogImpl" timestamp="1590898536845">
       <screen x="64" y="0" width="1472" height="864" />
     </state>
@@ -85,6 +117,10 @@
       <screen x="64" y="0" width="1472" height="864" />
     </state>
     <state x="302" y="75" key="SettingsEditor/64.0.1472.864@64.0.1472.864" timestamp="1590840832204" />
+    <state x="393" y="166" key="Vcs.Push.Dialog.v2" timestamp="1590911266708">
+      <screen x="64" y="0" width="1472" height="864" />
+    </state>
+    <state x="393" y="166" key="Vcs.Push.Dialog.v2/64.0.1472.864@64.0.1472.864" timestamp="1590911266708" />
     <state x="463" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1590730443487">
       <screen x="64" y="0" width="1472" height="864" />
     </state>
